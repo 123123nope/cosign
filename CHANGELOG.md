@@ -18,7 +18,7 @@ when running `cosign attest`.
 
 ## Contributors
 
-* Bob Callaway
+* Bob Calloway
 * Carlos Tadeu Panato Junior
 * Cody Soyland
 * Dmitry Savintsev
