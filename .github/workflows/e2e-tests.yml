@@ -86,7 +86,7 @@ jobs:
       VAULT_TOKEN: "root"
       VAULT_ADDR: "http://localhost:8200"
       COSIGN_YES: "true"
-      SCAFFOLDING_RELEASE_VERSION: "v0.7.21"
+      SCAFFOLDING_RELEASE_VERSION: "v0.7.23"
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -118,7 +118,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      SCAFFOLDING_RELEASE_VERSION: "v0.7.21"
+      SCAFFOLDING_RELEASE_VERSION: "v0.7.23"
 
     steps:
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -220,4 +220,4 @@ jobs:
 
     - name: Collect diagnostics
       if: ${{ failure() }}
-      uses: chainguard-dev/actions/kind-diag@9ba949ac63357c725a9438f3e05a1e33d313498e # main
+      uses: chainguard-dev/actions/kind-diag@ec48ea414c0cb207549029d8fe35f8f01e563219 # v1.0.8

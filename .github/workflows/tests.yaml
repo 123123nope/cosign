@@ -161,7 +161,7 @@ jobs:
       - name: setup kind cluster
         run: |
           # Used to test: cosign generate-key-pair k8s://...
-          go install sigs.k8s.io/kind@v0.20.0
+          go install sigs.k8s.io/kind@v0.27.0
           kind create cluster
 
       - name: Run end-to-end tests
@@ -169,7 +169,7 @@ jobs:
 
       - name: Collect diagnostics
         if: ${{ failure() }}
-        uses: chainguard-dev/actions/kind-diag@9ba949ac63357c725a9438f3e05a1e33d313498e # main
+        uses: chainguard-dev/actions/kind-diag@ec48ea414c0cb207549029d8fe35f8f01e563219 # v1.0.8
 
   e2e-windows-powershell-tests:
     name: Run PowerShell E2E tests
